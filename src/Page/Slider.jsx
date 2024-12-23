@@ -60,7 +60,7 @@ const Slider = () => {
                 <motion.button
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.95 }} className="bg-red-400 text-black font-extrabold py-3 px-5 mt-4 rounded-lg">
-                  <Link to={"/"}>Room Pager</Link>
+                  <Link to={"/rooms"}>ROOMS</Link>
                 </motion.button>
               </div>
             </div>

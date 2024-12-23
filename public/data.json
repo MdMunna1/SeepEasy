@@ -1,0 +1,123 @@
+[
+    {
+      "name": "Golden Sands Resort",
+      "location": "Myrtle Beach, SC",
+      "roomType": "Oceanfront Room",
+      "roomPrice": 200,
+      "rating": 4.5,
+      "roomImage": "https://img.freepik.com/free-vector/hotel-double-room-cartoon-illustration_33099-2026.jpg?t=st=1734871164~exp=1734874764~hmac=7c9fa409ae11e0fa0189e1a79de53fc4d1408b243d016632f8f8f64821ef98a6&w=996",
+      "amenities": ["Free Wi-Fi", "Breakfast Included", "Ocean View"],
+      "description": "A beachfront resort offering stunning views and luxury amenities.",
+      "reviews": [],
+      "availability": true
+    },
+    {
+      "name": "Seaside Retreat",
+      "location": "Miami Beach, FL",
+      "roomType": "Deluxe Suite",
+      "roomPrice": 300,
+      "rating": 4.8,
+      "roomImage": "https://img.freepik.com/free-vector/hotel-double-room-cartoon-illustration_33099-2026.jpg?t=st=1734871164~exp=1734874764~hmac=7c9fa409ae11e0fa0189e1a79de53fc4d1408b243d016632f8f8f64821ef98a6&w=996",
+      "amenities": ["Free Parking", "Pool Access", "Beachfront"],
+      "description": "An exclusive resort located by the sandy beaches of Miami.",
+      "reviews": [],
+      "availability": true
+    },
+    {
+      "name": "Mountain View Inn",
+      "location": "Aspen, CO",
+      "roomType": "King Suite",
+      "roomPrice": 250,
+      "rating": 4.7,
+      "roomImage": "https://img.freepik.com/free-vector/hotel-double-room-cartoon-illustration_33099-2026.jpg?t=st=1734871164~exp=1734874764~hmac=7c9fa409ae11e0fa0189e1a79de53fc4d1408b243d016632f8f8f64821ef98a6&w=996",
+      "amenities": ["Mountain View", "Hot Tub", "Ski Access"],
+      "description": "A charming inn with stunning mountain views and top-notch facilities.",
+      "reviews": [],
+      "availability": true
+    },
+    {
+      "name": "Urban Oasis Hotel",
+      "location": "New York, NY",
+      "roomType": "Executive Room",
+      "roomPrice": 400,
+      "rating": 4.6,
+      "roomImage": "https://img.freepik.com/free-vector/hotel-double-room-cartoon-illustration_33099-2026.jpg?t=st=1734871164~exp=1734874764~hmac=7c9fa409ae11e0fa0189e1a79de53fc4d1408b243d016632f8f8f64821ef98a6&w=996",
+      "amenities": ["Free Wi-Fi", "City View", "24/7 Room Service"],
+      "description": "A premium hotel offering a serene escape in the bustling city.",
+      "reviews": [],
+      "availability": true
+    },
+    {
+      "name": "Coastal Paradise",
+      "location": "Santa Monica, CA",
+      "roomType": "Standard Room",
+      "roomPrice": 180,
+      "rating": 4.3,
+      "roomImage": "https://img.freepik.com/free-vector/hotel-double-room-cartoon-illustration_33099-2026.jpg?t=st=1734871164~exp=1734874764~hmac=7c9fa409ae11e0fa0189e1a79de53fc4d1408b243d016632f8f8f64821ef98a6&w=996",
+      "amenities": ["Free Breakfast", "Ocean View", "Gym Access"],
+      "description": "A paradise by the coast, offering excellent amenities and services.",
+      "reviews": [],
+      "availability": true
+    },
+    {
+      "name": "Lakeside Lodge",
+      "location": "Lake Tahoe, NV",
+      "roomType": "Family Suite",
+      "roomPrice": 220,
+      "rating": 4.4,
+      "roomImage": "https://img.freepik.com/free-vector/hotel-double-room-cartoon-illustration_33099-2026.jpg?t=st=1734871164~exp=1734874764~hmac=7c9fa409ae11e0fa0189e1a79de53fc4d1408b243d016632f8f8f64821ef98a6&w=996",
+      "amenities": ["Lake View", "Free Kayaks", "Fireplace"],
+      "description": "A cozy lodge perfect for family vacations by the lake.",
+      "reviews": [],
+      "availability": true
+    },
+    {
+      "name": "Desert Rose Hotel",
+      "location": "Phoenix, AZ",
+      "roomType": "Luxury Room",
+      "roomPrice": 280,
+      "rating": 4.2,
+      "roomImage": "https://img.freepik.com/free-vector/hotel-double-room-cartoon-illustration_33099-2026.jpg?t=st=1734871164~exp=1734874764~hmac=7c9fa409ae11e0fa0189e1a79de53fc4d1408b243d016632f8f8f64821ef98a6&w=996",
+      "amenities": ["Free Breakfast", "Pool Access", "Desert View"],
+      "description": "A luxurious escape in the heart of the desert.",
+      "reviews": [],
+      "availability": true
+    },
+    {
+      "name": "Rainforest Retreat",
+      "location": "Portland, OR",
+      "roomType": "Eco Cabin",
+      "roomPrice": 260,
+      "rating": 4.5,
+      "roomImage": "https://img.freepik.com/free-vector/hotel-double-room-cartoon-illustration_33099-2026.jpg?t=st=1734871164~exp=1734874764~hmac=7c9fa409ae11e0fa0189e1a79de53fc4d1408b243d016632f8f8f64821ef98a6&w=996",
+      "amenities": ["Eco-Friendly", "Nature Trails", "Free Wi-Fi"],
+      "description": "An eco-friendly retreat surrounded by lush rainforests.",
+      "reviews": [],
+      "availability": true
+    },
+    {
+      "name": "Hilltop Haven",
+      "location": "San Francisco, CA",
+      "roomType": "Penthouse Suite",
+      "roomPrice": 450,
+      "rating": 4.9,
+      "roomImage": "https://img.freepik.com/free-vector/hotel-double-room-cartoon-illustration_33099-2026.jpg?t=st=1734871164~exp=1734874764~hmac=7c9fa409ae11e0fa0189e1a79de53fc4d1408b243d016632f8f8f64821ef98a6&w=996",
+      "amenities": ["Rooftop View", "Luxury Amenities", "Private Hot Tub"],
+      "description": "A luxurious penthouse with stunning city views.",
+      "reviews": [],
+      "availability": true
+    },
+    {
+      "name": "Tropical Bliss Resort",
+      "location": "Honolulu, HI",
+      "roomType": "Beach Bungalow",
+      "roomPrice": 350,
+      "rating": 4.7,
+      "roomImage": "https://img.freepik.com/free-vector/hotel-double-room-cartoon-illustration_33099-2026.jpg?t=st=1734871164~exp=1734874764~hmac=7c9fa409ae11e0fa0189e1a79de53fc4d1408b243d016632f8f8f64821ef98a6&w=996",
+      "amenities": ["Ocean Access", "Private Balcony", "Free Breakfast"],
+      "description": "A tropical resort offering serene beauty and luxury.",
+      "reviews": [],
+      "availability": true
+    }
+  ]
+  

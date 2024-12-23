@@ -4,35 +4,54 @@ import { MdRestaurantMenu } from "react-icons/md";
 import { useContext, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { MainContex } from "../Contex/ContexComponent";
+import logo from "../assets/logo.png"
 function Navber() {
   const [velu, setVelu] = useState(true);
-//   let { user, logOut, setUser } = useContext(MainContex);
+  let { user, logOut, setUser } = useContext(MainContex);
   return (
     <>
-      <nav className="items-center py-3 font-semibold flex justify-between">
-        <h1 className="text-2xl text-blue-500 flex items-center gap-2">
-          {/* <img className="h-12 w-12 rounded-full  object-cover" src="https://img.freepik.com/premium-photo/plane-flying-globe-with-word-world-it_406811-108596.jpg?w=740" alt="" /> */}
-          assingment_11
+      <nav className="items-center py-4 text-white font-semibold bg-black flex justify-between">
+        <h1 className="text-2xl text-red-400 flex items-center gap-2">
+          <img className="h-12 w-12 rounded-full  object-cover" src={logo} alt="" />
+          SleepEase
         </h1>
         <ul className="hidden text-xs lg:text-sm sm:flex items-center gap-3">
           <NavLink
             to={"/"}
             className={({ isActive }) =>
-              `px-2 py-1 rounded-md ${isActive ? "bg-blue-500 text-white" : ""}`
+              `px-2 py-1 rounded-md ${isActive ? "bg-red-400 text-white" : ""}`
             }
           >
             Home
           </NavLink>
-          {/* {user ? (
+          <NavLink
+            to={"/rooms"}
+            className={({ isActive }) =>
+              `px-2 py-1 rounded-md ${isActive ? "bg-red-400 text-white" : ""}`
+            }
+          >
+            Rooms
+          </NavLink>
+          <NavLink
+            to={"/mybooking"}
+            className={({ isActive }) =>
+              `px-2 py-1 rounded-md ${isActive ? "bg-red-400 text-white" : ""}`
+            }
+          >
+            My Booking
+          </NavLink>
+          {user ? (
             <>
               <div className="flex gap-1 items-center">
-                <img title={user?.displayName}
+                <img
+                referrerPolicy="no-referrer"
+                 title={user?.displayName}
                   className="h-8 w-8 rounded-full p-1"
                   src={user?.photoURL}
                   alt=""
                 />{" "}
                 <Link
-                  className="bg-blue-500 text-white font-bold py-2 px-3 rounded-md"
+                  className="bg-red-400 text-white font-bold py-2 px-3 rounded-md"
                   onClick={logOut}
                 >
                   LogOut
@@ -46,7 +65,7 @@ function Navber() {
                 to={"/login"}
                 className={({ isActive }) =>
                   `px-2 py-1 rounded-md ${
-                    isActive ? "bg-blue-500 text-white" : ""
+                    isActive ? "bg-red-400 text-white" : ""
                   }`
                 }
               >
@@ -56,14 +75,14 @@ function Navber() {
                 to={"/register"}
                 className={({ isActive }) =>
                   `px-2 py-1 rounded-md ${
-                    isActive ? "bg-blue-500 text-white" : ""
+                    isActive ? "bg-red-400 text-white" : ""
                   }`
                 }
               >
                 Register
               </NavLink>
             </>
-          )} */}
+          )}
         </ul>
         {velu ? (
           <h1
@@ -89,21 +108,39 @@ function Navber() {
           <NavLink
             to={"/"}
             className={({ isActive }) =>
-              `px-2 py-1 rounded-md ${isActive ? "bg-blue-500 text-white" : ""}`
+              `px-2 py-1 rounded-md ${isActive ? "bg-red-400 text-white" : ""}`
             }
           >
             Home
           </NavLink>
-          {/* {user ? (
+
+          <NavLink
+            to={"/rooms"}
+            className={({ isActive }) =>
+              `px-2 py-1 rounded-md ${isActive ? "bg-red-400 text-white" : ""}`
+            }
+          >
+            Rooms
+          </NavLink>
+          <NavLink
+            to={"/mybooking"}
+            className={({ isActive }) =>
+              `px-2 py-1 rounded-md ${isActive ? "bg-red-400 text-white" : ""}`
+            }
+          >
+            My Booking
+          </NavLink>
+          {user ? (
             <>
               <div className="flex gap-1 items-center">
                 <img
+                referrerPolicy="no-referrer"
                   className="h-8 w-8 rounded-full p-1"
                   src={user?.photoURL}
                   alt=""
                 />{" "}
                 <Link
-                  className="bg-blue-500 text-white font-bold py-2 px-3 rounded-md"
+                  className="bg-red-400 text-white font-bold py-2 px-3 rounded-md"
                   onClick={logOut}
                 >
                   LogOut
@@ -117,7 +154,7 @@ function Navber() {
                 to={"/login"}
                 className={({ isActive }) =>
                   `px-2 py-1 rounded-md ${
-                    isActive ? "bg-blue-500 text-white" : ""
+                    isActive ? "bg-red-400 text-white" : ""
                   }`
                 }
               >
@@ -127,14 +164,14 @@ function Navber() {
                 to={"/register"}
                 className={({ isActive }) =>
                   `px-2 py-1 rounded-md ${
-                    isActive ? "bg-blue-500 text-white" : ""
+                    isActive ? "bg-red-400 text-white" : ""
                   }`
                 }
               >
                 Register
               </NavLink>
             </>
-          )} */}
+          )}
         </ul>
       </nav>
     </>

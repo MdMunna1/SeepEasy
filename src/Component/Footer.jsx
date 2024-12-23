@@ -1,19 +1,22 @@
 import React from "react";
+import logo from "../assets/logo.png"
+import { motion } from "motion/react";
+
 
 const Footer = () => {
   return (
     <>
-      <div className="sm:flex justify-around border-2">
+      <div className="sm:flex bg-gradient-to-r from-black via-gray-500 to-black justify-around border-2 text-white">
         <section>
-          <footer className="footer footer-center text-black p-10">
+          <footer className="footer footer-center p-10">
             <aside>
               <img
                 className="w-24 h-24 object-cover rounded-full"
-                src="https://img.freepik.com/premium-photo/plane-flying-globe-with-word-world-it_406811-108596.jpg?w=740"
+                src={logo}
                 alt=""
               />
               <p className="font-bold">
-                VisaJourney Industries Ltd.
+              SleepEase Industries Ltd.
                 <br />
                 Providing reliable tech since 1992
               </p>
@@ -64,17 +67,19 @@ const Footer = () => {
             <input
               type="email"
               placeholder="Type your email"
-              className="input input-bordered input-secondary w-full max-w-xs"
+              className="input text-black input-bordered input-secondary w-full max-w-xs"
             />
         
             
               <textarea
+            
                 placeholder="FeedBack"
-                className="textarea textarea-bordered textarea-md w-full max-w-xs"
+                className="textarea text-black textarea-bordered textarea-md w-full max-w-xs"
               ></textarea>
         
           </form>
-             <button className="bg-green-500 p-3 rounded-lg">Submit</button>
+             <motion.button whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95 }} className="bg-green-500 p-3 rounded-lg">Submit</motion.button>
         </section>
       </div>
     </>
