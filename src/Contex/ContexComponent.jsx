@@ -35,7 +35,12 @@ const ContexComponent = ({ children }) => {
   }
 
   // * Logout
-  function logOut() {
+  async function logOut() {
+    const { data } = await axios.post(
+      `${import.meta.env.VITE_API_URL}/logout`,{},
+      { withCredentials: true }
+    );
+    console.log(data)
     return signOut(auth);
   }
 
@@ -54,13 +59,12 @@ const ContexComponent = ({ children }) => {
           { email: curr?.email },
           { withCredentials: true }
         );
-        console.log(data);
+        // console.log(data);
       } else {
+        // setUser(!curr);
         setUser(null);
-        const { data } = await axios.get(
-          `${import.meta.env.VITE_API_URL}/logout`,
-          { withCredentials: true } 
-        );
+        
+
         // console.log(data,curr)
       }
       setLoder(false);

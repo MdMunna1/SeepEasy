@@ -1,12 +1,10 @@
-<!--
-* cliein:https://github.com/programming-hero-web-course2/b10a11-client-side-MdMunna1
-* server:https://github.com/programming-hero-web-course2/b10a11-server-side-MdMunna1
 
- * live link:https://serversite-five.vercel.app
-*চ্যালেঞ্জস পার্ট 🌟
+cliein:https://github.com/programming-hero-web-course2/b10a11-client-side-MdMunna1
+server:https://github.com/programming-hero-web-course2/b10a11-server-side-MdMunna1
+live link : https://assingment-11-9c848.web.app
 webSite Name : SleepEase
 Purpose of the website : The purpose of SleepEase is to make hotel room booking simple and convenient.
-live link:https://serversite-five.vercel.app
+live link:https://assingment-11-9c848.web.app
 
 SleepEase - Hotel Booking Made Simple
 
@@ -34,7 +32,3 @@ npm packg
 12.Slick Carousel
 13.Sweetalert2
 14..Swiper
-আপনার ক্লায়েন্ট-সাইড কোডের GitHub রিপোজিটরি
-আপনার সার্ভার-সাইড কোডের GitHub রিপোজিটরি
-আপনার লাইভ ওয়েবসাইট লিঙ্ক
- -->

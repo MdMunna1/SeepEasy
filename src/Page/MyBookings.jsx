@@ -20,6 +20,7 @@ const MyBookings = () => {
 
   const fetchAllData = async () => {
     if (user?.email) {
+      // console.log(user?.email);
       const { data } = await axios.get(
         `${import.meta.env.VITE_API_URL}/myaddRooms/${user?.email}`,
         {
@@ -29,7 +30,6 @@ const MyBookings = () => {
       setRooms(data);
     }
   };
-  // console.log(rooms);
 
   const handleCancelBooking = async (deletid, time) => {
     console.log(deletid, time);
