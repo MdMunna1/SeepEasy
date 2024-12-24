@@ -4,7 +4,6 @@ import { motion } from "motion/react";
 
 
 const Romdesing = ({ room }) => {
-  console.log(room);
   let { roomImage, description } = room || {};
   return (
     <>

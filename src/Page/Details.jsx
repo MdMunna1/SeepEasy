@@ -25,13 +25,12 @@ const RoomDetails = () => {
   }, [user]);
 
   const fetchAllData = async () => {
-    if (user?.email) {
-      const { data } = await axios.get(
-        `${import.meta.env.VITE_API_URL}/myaddRooms/${user?.email}`
-      );
-      setUserRoom(data);
-    }
+    const { data } = await axios.get(
+      `${import.meta.env.VITE_API_URL}/allbokkingRooms`
+    );
+    setUserRoom(data);
   };
+
   let oneData = userRoom?.find((all) => all?.roomId === id);
 
   // * reviw ar jonno
@@ -125,11 +124,14 @@ const RoomDetails = () => {
             <h2 className="text-2xl font-semibold">Reviews:</h2>
             {reviwOne ? (
               <ul className="mt-2">
-                <li> {reviwOne?.email || "N/A" }</li>
-                <li className="my-2"> {reviwOne?. comment || "N/A" }</li>
-                <li className="flex items-center"> {Array.from({ length: reviwOne?.rating }).map((_, index) => (
-                  <FaStar key={index} />
-                ))}</li>
+                <li> {reviwOne?.email || "N/A"}</li>
+                <li className="my-2"> {reviwOne?.comment || "N/A"}</li>
+                <li className="flex items-center">
+                  {" "}
+                  {Array.from({ length: reviwOne?.rating }).map((_, index) => (
+                    <FaStar key={index} />
+                  ))}
+                </li>
               </ul>
             ) : (
               <p>No reviews available for this room.</p>

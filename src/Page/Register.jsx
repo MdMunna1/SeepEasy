@@ -29,8 +29,6 @@ const Register = () => {
 
     emailPass(email, password)
       .then((res) => {
-        // let time = res?.user?.metadata?.lastSignInTime;
-        // let user = { name, email,time };
         setUser(res?.user);
         updateproile({ displayName: name, photoURL: photo }).then(() => {
             Swal.fire({
@@ -42,6 +40,10 @@ const Register = () => {
   navigate("/")
           
         });
+      }).catch(error=>{
+        Swal.fire("Please try again");
+      
+
       });
   }
   function heldlgoogleLogin() {

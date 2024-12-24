@@ -96,6 +96,7 @@ const MyBookings = () => {
           rating,
           comment,
           roomId,
+          time: new Date().toISOString(),
           email: user?.email,
         };
         // console.log(data)

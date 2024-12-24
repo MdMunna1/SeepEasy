@@ -7,7 +7,7 @@ const Join = () => {
    <motion.div
    initial={{ opacity: 0 }} 
    whileInView={{ opacity: 1 }} 
-   viewport={{ once: true }} 
+  //  viewport={{ once: true }} 
    transition={{ duration: 1 }} 
     className="flex flex-col gap-2 bg-gradient-to-t from-black via-blue-600 to-black items-center">
       <h1 className="p-6 font-bold text-white text-2xl">Explore Our Rooms</h1>
@@ -26,7 +26,7 @@ const Join = () => {
 initial={{ opacity: 0, x: -200 }} 
 whileInView={{ opacity: 1, x: 0 }} 
 transition={{ duration: 1}}
-viewport={{ once: true }}
+// viewport={{ once: true }}
           data-aos="fade-right"
           className="p-2 rounded-md bg-blue-300 shadow-lg"
         >
@@ -39,7 +39,7 @@ viewport={{ once: true }}
         initial={{ opacity: 0, x: 200 }} 
         whileInView={{ opacity: 1, x: 0 }} 
         transition={{ duration: 1}}
-        viewport={{ once: true }}
+        // viewport={{ once: true }}
           data-aos="fade-left"
           className="p-2 rounded-md bg-blue-300 shadow-lg"
         >
@@ -52,7 +52,7 @@ viewport={{ once: true }}
         initial={{ opacity: 0, y: 200 }} 
         whileInView={{ opacity: 1, y: 0 }} 
         transition={{ duration: 1}}
-        viewport={{ once: true }}
+        // viewport={{ once: true }}
         
         className="p-2 rounded-md bg-blue-300 shadow-lg">
           <h1 className="font-bold text-2xl py-3">Discover the Difference in Comfort and Luxury</h1>
@@ -64,7 +64,7 @@ viewport={{ once: true }}
         initial={{ opacity: 0, y: 200 }} 
         whileInView={{ opacity: 1, y: 0 }} 
         transition={{ duration: 1}}
-        viewport={{ once: true }}
+        // viewport={{ once: true }}
         
         className="p-2 rounded-md bg-blue-300 shadow-lg">
           <h1 className="font-bold text-2xl py-3">The Perfect Blend of Comfort, Style, and Convenience</h1>

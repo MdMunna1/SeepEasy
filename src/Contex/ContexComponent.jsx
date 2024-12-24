@@ -9,6 +9,7 @@ import {
   updateProfile,
 } from "firebase/auth";
 import { auth } from "../FireBase/Firebase";
+import axios from "axios";
 
 export let MainContex = createContext(null);
 const provider = new GoogleAuthProvider();
@@ -45,9 +46,15 @@ const ContexComponent = ({ children }) => {
 
   // * Listen for auth state changes
   useEffect(() => {
-    let uns = onAuthStateChanged(auth, (curr) => {
+    let uns = onAuthStateChanged(auth, async (curr) => {
       if (curr) {
         setUser(curr);
+        const { data } = await axios.post(
+          `${import.meta.env.VITE_API_URL}/jwt`,
+          { email: curr?.email },
+          { withCredentials: true } 
+        );
+        console.log(data)
       } else {
         setUser(null);
       }
@@ -71,9 +78,7 @@ const ContexComponent = ({ children }) => {
     setUser,
   };
 
-  return (
-    <MainContex.Provider value={valu}>{children}</MainContex.Provider>
-  );
+  return <MainContex.Provider value={valu}>{children}</MainContex.Provider>;
 };
 
 export default ContexComponent;
