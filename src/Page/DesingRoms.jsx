@@ -18,7 +18,7 @@ const DesingRoms = ({ room }) => {
           animate={{ scale: 1 }} 
           transition={{ duration: 0.2, ease: "easeOut" }} 
           
-          className="grid sm:grid-cols-2 bg-white  gap-3 rounded-lg m-2 shadow-lg shadow-black sm:h-48 w-[100%]"
+          className="grid sm:grid-cols-2 bg-white  gap-1 rounded-lg m-2 shadow-lg shadow-black sm:h-48 w-[100%]"
         >
           <section className="h-full rounded-md w-[100%] border ">
             <img
@@ -27,7 +27,7 @@ const DesingRoms = ({ room }) => {
               alt=""
             />
           </section>
-          <section className="sm:w-[100%] px-1 rounded-md border flex flex-col justify-evenly text-left">
+          <section className="sm:w-[100%] pb-2 sm:pb-0 px-1 rounded-md border flex flex-col justify-evenly text-left">
             <h1 className="py-2 text-red-500 sm:text-xl font-bold">
               {room?.name}
             </h1>
@@ -35,7 +35,7 @@ const DesingRoms = ({ room }) => {
             <p className="py-1">Price: {room?.roomPrice}</p>
             <div className="flex">
               {Array.from({ length: rating }).map((_, index) => (
-                <FaStar key={index} />
+                <FaStar className="text-yellow-500" key={index} />
               ))}
             </div>
           </section>

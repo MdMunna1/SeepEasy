@@ -55,7 +55,7 @@ const Rooms = () => {
           </div>
           <button
             type="submit"
-            className="transition-colors duration-300 ease-in-out hover:bg-red-700 bg-red-500 rounded-md text-white px-2 py-1"
+            className="transition-colors duration-300 ease-in-out hover:bg-red-700 bg-black rounded-md text-white px-3 py-1"
           >
             Filter
           </button>
@@ -64,7 +64,7 @@ const Rooms = () => {
       
 
 
-      <div className="grid sm:grid-cols-2 min-h-screen border pr-2 border-x-black py-6 gap-2 bg-slate-300">
+      <div className="grid sm:grid-cols-2 min-h-screen pr-2 py-6 gap-2 bg-gradient-to-t from-black via-red-500 to-black">
         {rooms ? (
           rooms?.map((all) => <DesingRoms key={all._id} room={all} />)
         ) : (

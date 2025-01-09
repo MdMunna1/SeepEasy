@@ -122,8 +122,13 @@ const MyBookings = () => {
     });
   };
 
-  if (!rooms.length)
-    return <span className="loading loading-spinner text-neutral"></span>;
+  if (!rooms.length) {
+    return (
+      <div className="h-screen flex justify-center items-center text-center">
+        <p>No Dada Found</p>
+      </div>
+    );
+  }
 
   return (
     <div className=" w-full text-xs sm:text-sm py-6">
