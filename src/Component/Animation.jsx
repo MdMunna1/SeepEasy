@@ -37,7 +37,7 @@ const Animation = () => {
               />
             </div>
             <div className="text-left mx-9 text-white">
-              <p>{room?.name}</p>
+              <p className="py-1">{room?.name}</p>
               <p className="flex items-center">
                 {" "}
                 {Array.from({ length: room?.rating }).map((_, index) => (

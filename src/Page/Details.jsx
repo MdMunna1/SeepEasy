@@ -81,7 +81,7 @@ const RoomDetails = () => {
   };
   const rating = Math.floor(room?.rating);
   if (!room)
-    return <span className="loading loading-spinner text-neutral"></span>;
+    return <div className="flex justify-center h-screen w-full"> <span className="loading loading-spinner text-neutral"></span></div>;
 
   return (
     <>

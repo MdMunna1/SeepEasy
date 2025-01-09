@@ -31,9 +31,9 @@ const ReviwShow = () => {
 
   return (
     <>
-      <section className="bg-gradient-to-r from-red-500 to-black">
-        <div className="w-full   max-w-3xl mx-auto mt-10">
-          <h2 className="text-center text-2xl font-bold mb-6">User Reviwes</h2>
+      <section className="sm:h-[240px] bg-gradient-to-r from-black via-red-400  to-black">
+        <div className="w-full   max-w-3xl mx-auto mt-4">
+          <h2 className="text-center text-2xl font-bold py-2 text-white mb-6">User Reviwes</h2>
           <Slider {...settings}>
             {userReviw?.map((all) => (
               <div

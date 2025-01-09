@@ -12,22 +12,22 @@ const DesingRoms = ({ room }) => {
     <>
       <Link to={`/details/${room?._id}`}>
         <motion.div
-          whileHover={{ scale: 1.05 }} 
+          whileHover={{ scale: 1.03 }} 
           whileTap={{ scale: 0.9 }}
           initial={{ scale: 0.8 }}
           animate={{ scale: 1 }} 
           transition={{ duration: 0.2, ease: "easeOut" }} 
           
-          className="grid sm:grid-cols-2 gap-4 rounded-lg m-2 shadow-lg shadow-black sm:h-48 w-[100%]"
+          className="grid sm:grid-cols-2 bg-white  gap-3 rounded-lg m-2 shadow-lg shadow-black sm:h-48 w-[100%]"
         >
-          <section className="h-44 w-[100%] border ">
+          <section className="h-full rounded-md w-[100%] border ">
             <img
-              className="h-full w-full rounded-lg"
+              className="h-full p-1 w-full rounded-lg"
               src={room?.roomImage}
               alt=""
             />
           </section>
-          <section className="sm:w-[100%] pl-2 rounded-md border flex flex-col justify-evenly text-left">
+          <section className="sm:w-[100%] px-1 rounded-md border flex flex-col justify-evenly text-left">
             <h1 className="py-2 text-red-500 sm:text-xl font-bold">
               {room?.name}
             </h1>
@@ -41,6 +41,13 @@ const DesingRoms = ({ room }) => {
           </section>
         </motion.div>
       </Link>
+         
+        
+
+
+   
+
+
     </>
   );
 };

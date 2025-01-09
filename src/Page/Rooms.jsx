@@ -31,14 +31,20 @@ const Rooms = () => {
     }
   };
 
-  if (!rooms) return <p>loding....</p>;
+  if (!rooms)
+    return (
+      <>
+        {" "}
+        <p className="text-center h-screen w-full">loding....</p>{" "}
+      </>
+    );
 
   return (
     <>
-      <section className="py-10 bg-gradient-to-t from-black via-slate-300 to-black flex justify-center ">
+      <section className="py-10 bg-gradient-to-t from-black via-red-800 to-black flex justify-center ">
         <form onSubmit={handleFilterSubmit} className="sm:flex gap-2">
           <div>
-            <label htmlFor="price">Max Price: </label>
+            <label className="text-white font-semibold" htmlFor="price">Max Price: </label>
             <input
               type="number"
               id="price"
@@ -55,10 +61,15 @@ const Rooms = () => {
           </button>
         </form>
       </section>
-      <div className="grid sm:grid-cols-2 bg-slate-100 gap-4">
-        {rooms?.map((all) => (
-          <DesingRoms key={all._id} room={all} />
-        ))}
+      
+
+
+      <div className="grid sm:grid-cols-2 min-h-screen border pr-2 border-x-black py-6 gap-2 bg-slate-300">
+        {rooms ? (
+          rooms?.map((all) => <DesingRoms key={all._id} room={all} />)
+        ) : (
+          <div className="text-center h-screen w-full">loding...</div>
+        )}
       </div>
     </>
   );

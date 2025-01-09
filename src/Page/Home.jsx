@@ -12,12 +12,15 @@ const Home = () => {
   return (
     <>
       <Slider />
+      <div className="flex justify-center">
+
       <PopUp />
+      </div>
 
       <ReviwShow />
-      <section className="bg-gradient-to-t from-black to-red-500">
+      <section className="bg-gradient-to-t from-black to-red-950">
 
-      <div className="w-8/12 h-[400px] mx-auto">
+      <div className="w-8/12 h-[500px] mx-auto">
       <MyMap />
       </div>
       </section>

@@ -11,9 +11,14 @@ function App() {
 
   return (
     <>
-      <section>
+    <section className="border-gray-400">
+
+   
+
+      <section className="sticky top-0 z-10 ">
         <Navber />
       </section>
+    <div className="w-[98%] mx-auto">
       {/* OUTlet section */}
       <section>
         <Outlet />
@@ -23,6 +28,9 @@ function App() {
       <section>
         <Footer />
       </section>
+      </div>
+      </section>
+
     </>
   );
 }

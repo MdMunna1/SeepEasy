@@ -43,7 +43,7 @@ const Slider = () => {
       {slidesData.map((slide) => (
         <SwiperSlide key={slide.id}>
           <div
-            className="hero h-[280px] md:h-[500px] md:my-8 my-4 bg-cover bg-no-repeat"
+            className="hero h-[250px] md:h-[460px] bg-cover object-cover bg-no-repeat"
             style={{
               backgroundImage: ` url(${slide.image})`,
             }}

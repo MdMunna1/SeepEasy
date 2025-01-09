@@ -10,7 +10,10 @@ function Navber() {
   let { user, logOut, setUser } = useContext(MainContex);
   return (
     <>
-      <nav className="items-center py-4 text-white font-semibold bg-black flex justify-between">
+    <div className="bg-black ">
+
+   
+      <nav className="items-center py-4 w-[97%] mx-auto rounded-lg text-white font-semibold flex justify-between">
         <h1 className="text-2xl text-red-400 flex items-center gap-2">
           <img className="h-12 w-12 rounded-full  object-cover" src={logo} alt="" />
           SleepEase
@@ -174,6 +177,7 @@ function Navber() {
           )}
         </ul>
       </nav>
+      </div>
     </>
   );
 }

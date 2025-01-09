@@ -1,7 +1,4 @@
 
-cliein:https://github.com/programming-hero-web-course2/b10a11-client-side-MdMunna1
-server:https://github.com/programming-hero-web-course2/b10a11-server-side-MdMunna1
-live link : https://assingment-11-9c848.web.app
 webSite Name : SleepEase
 Purpose of the website : The purpose of SleepEase is to make hotel room booking simple and convenient.
 live link:https://assingment-11-9c848.web.app

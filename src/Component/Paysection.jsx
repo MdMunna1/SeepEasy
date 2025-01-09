@@ -3,8 +3,8 @@ import React from "react";
 const Paysection = () => {
   return (
     <>
-    <section className="w-full bg-red-50 p-4 rounded-lg">
-  <div className="flex flex-col sm:flex-row">
+    <section className="w-full bg-red-50 py-4 rounded-lg">
+  <div className="flex flex-col gap-2 sm:flex-row">
     {/* Image Section */}
     <div className="w-full sm:w-5/12">
       <img
