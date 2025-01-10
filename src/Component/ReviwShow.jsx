@@ -31,14 +31,14 @@ const ReviwShow = () => {
 
   return (
     <>
-      <section className="sm:h-[240px] bg-gradient-to-r from-black via-red-400  to-black">
-        <div className="w-full   max-w-3xl mx-auto mt-4">
+      <section className="sm:h-[240px] h-auto bg-gradient-to-r from-black via-red-400  to-black">
+        <div className="w-full h-[250px]  sm:max-w-3xl mx-auto mt-4">
           <h2 className="text-center text-2xl font-bold py-2 text-white mb-6">User Reviwes</h2>
           <Slider {...settings}>
             {userReviw?.map((all) => (
               <div
                 key={all?._id}
-                className="p-6 bg-white shadow-md rounded-lg text-center"
+                className="p-4 bg-white h-[10%] shadow-md rounded-lg text-center"
               >
                 <h3 className="text-lg font-semibold">{all?.email}</h3>
                 <p className="text-sm text-gray-500">{all?.comment}</p>
