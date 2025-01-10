@@ -94,7 +94,7 @@ const RoomDetails = () => {
           />
           <section className="sm:flex justify-between">
             <div className="flex gap-2 flex-col items-start">
-              <h1 className="font-bold text-xl">Name: {room?.name}</h1>
+              <h1 className="font-bold text-red-600 text-xl">Name: {room?.name}</h1>
               <p className="fo">
                 <span className="font-semibold">Room Type</span>:{" "}
                 {room?.roomType}
@@ -108,7 +108,7 @@ const RoomDetails = () => {
               <h1 className="flex font-semibold items-center">
                 Reting:{" "}
                 {Array.from({ length: rating }).map((_, index) => (
-                  <FaStar key={index} />
+                  <FaStar className="text-yellow-500" key={index} />
                 ))}
               </h1>
               <p className="font-semibold"> Price: ${room?.roomPrice}</p>
@@ -129,7 +129,7 @@ const RoomDetails = () => {
                 <li className="flex items-center">
                   {" "}
                   {Array.from({ length: reviwOne?.rating }).map((_, index) => (
-                    <FaStar key={index} />
+                    <FaStar className="text-yellow-500" key={index} />
                   ))}
                 </li>
               </ul>

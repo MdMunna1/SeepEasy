@@ -97,8 +97,8 @@ transition={{ duration: 1}}
   <section className="grid gap-6 mt-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
     {/* First Card */}
     <motion.div
-      initial={{ opacity: 0, x: -200 }}
-      whileInView={{ opacity: 1, x: 0 }}
+      initial={{ opacity: 0, y: 100 }}
+      whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}
       className="p-4 bg-blue-300 shadow-lg rounded-md"
     >
@@ -110,8 +110,8 @@ transition={{ duration: 1}}
 
     {/* Second Card */}
     <motion.div
-      initial={{ opacity: 0, x: 200 }}
-      whileInView={{ opacity: 1, x: 0 }}
+      initial={{ opacity: 0, y: 100 }}
+      whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}
       className="p-4 bg-blue-300 shadow-lg rounded-md"
     >
